@@ -1,0 +1,1 @@
+json.partial! "video2tags/video2tag", video2tag: @video2tag
