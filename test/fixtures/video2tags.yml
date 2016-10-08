@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  string: 
-  string: 
+  video_id: MyString
+  tag_id: MyString
 
 two:
-  string: 
-  string: 
+  video_id: MyString
+  tag_id: MyString

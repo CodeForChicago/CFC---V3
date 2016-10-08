@@ -69,6 +69,6 @@ class Video2tagsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def video2tag_params
-      params.require(:video2tag).permit(:string, :string)
+      params.require(:video2tag).permit(:video_id, :tag_id)
     end
 end

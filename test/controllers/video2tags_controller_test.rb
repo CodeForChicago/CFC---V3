@@ -17,7 +17,7 @@ class Video2tagsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create video2tag" do
     assert_difference('Video2tag.count') do
-      post video2tags_url, params: { video2tag: { string: @video2tag.string, string: @video2tag.string } }
+      post video2tags_url, params: { video2tag: { tag_id: @video2tag.tag_id, video_id: @video2tag.video_id } }
     end
 
     assert_redirected_to video2tag_url(Video2tag.last)
@@ -34,7 +34,7 @@ class Video2tagsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update video2tag" do
-    patch video2tag_url(@video2tag), params: { video2tag: { string: @video2tag.string, string: @video2tag.string } }
+    patch video2tag_url(@video2tag), params: { video2tag: { tag_id: @video2tag.tag_id, video_id: @video2tag.video_id } }
     assert_redirected_to video2tag_url(@video2tag)
   end
 
